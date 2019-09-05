@@ -1,0 +1,41 @@
+#header {
+    background-color: #0282f9;
+    padding: 20px;
+    height: 100px;
+}
+
+#main-container {
+    border: 1px solid black;
+    height: calc(100vh - 70px);
+}
+
+#main-left {
+    width: 400px;
+    border: 1px solid black;
+    float: left;
+    height: 100%;
+}
+
+#main-center {
+    width: 550px;
+    float: left;
+    border: 1px solid black;
+    height: 100%;
+    overflow: auto;
+}
+
+.heroes:nth-child(even) {
+background-color: beige;
+}
+
+#main-right {
+    width: 561px;
+    float: left;
+    border: 1px solid black;
+    height: 100%;
+    overflow: auto;
+}
+
+body{
+    background-color: white;
+}
