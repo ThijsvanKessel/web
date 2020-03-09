@@ -1,0 +1,61 @@
+body{
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+}
+#content-container{
+	margin: 0 auto;
+	height: 400px;
+	width: 	375px;
+	background-color: #2b2a2a;
+	position: relative;
+}
+.sumbit-button{
+	height: 100px;
+	width: 105px;
+	margin-left: 5px;
+}
+#input-container{
+	width: 350px;
+	height: 80px;
+	margin-right: 25px;
+	margin-left: 25px;
+	margin: 0 auto;
+	background-color: white;
+	text-underline-position: center;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 1px 1px lightgrey;
+}
+#button-container{
+	width: 350px;
+	height: 135px;
+	margin: 0 auto;
+	background-color: grey;
+}
+#amount-attempts{
+	width: 350px;
+	height: 75px;
+	margin-right: 25px;
+	margin-left: 25px;
+	margin: 0 auto;
+	background-color: grey;
+	text-underline-position: center;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 1px 1px grey;
+}
+
+#flashgood{
+	width: 187px;
+	height: 30px;
+	background-color: darkgreen;
+	position: absolute;
+	right: 0px;
+}
+#flashfalse{
+	width: 188px;
+	height: 30px;
+	background-color: darkred;
+	position: absolute;
+	left: 0px;
+}

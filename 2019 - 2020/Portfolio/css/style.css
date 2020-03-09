@@ -1,0 +1,50 @@
+body {
+    background-image: url("../img/wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+.Row {
+	border:5px red;
+	height: 250px;
+	width: 100%;
+}
+
+
+.Colomn {
+	background-color: white;
+	border:1px solid black;
+	border-radius: 10px;
+	/* height: 50px; */
+}
+
+.container{
+	width: 100%;
+}
+
+.btn{
+	color: white;
+}
+
+#header {
+	color: white;
+	font-size: 30px;
+}
+
+.ContactButton{
+	border:1px solid black;
+	color: black;
+	
+}
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+}
+
+.mail{
+    float: none;
+    margin: 0 auto;
+}

@@ -1,0 +1,61 @@
+body {
+    background-image: url("../images/wallpaper2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    font-family: 'Arial';
+}
+#header {
+    height: 100px;
+    background-color: black;
+}
+#logo {
+    color: white;
+    float: left;
+    font-size: 37px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+#main-nav li {
+    display: inline;
+}
+#main-nav li a {
+    display: inline-block;
+    width: 100px;
+    height: 45px;
+    background-color: #D2474D;
+    color: #fff;
+    text-align: center;
+    padding-top: 24px;
+}
+#main-nav{
+    float: right;
+    margin-right: 70px;
+}
+#main-nav li a:hover{
+    background-color: rgb(182, 63, 69);
+}
+#heading-one-home {
+    color: white;
+    font-size: 80px;
+    text-align: center;
+}
+#heading-two-home {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+#playlist-btn-home {
+    display: block;
+    border: 1px solid #fff;
+    width: 300px;
+    color: white;
+    font-size: 20px;
+    background-color: #D2474D;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+}
