@@ -18,9 +18,8 @@ function headerFunction()
               More
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Projects</a>
               <a class="dropdown-item" href="Contact.php">Contact</a>
-              <a class="dropdown-item" href="#">Git</a>
+              <a class="dropdown-item" href="https://github.com/ThijsvanKessel/">Git</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">curriculum vitae</a>
             </div>
