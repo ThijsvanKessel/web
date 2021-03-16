@@ -14,12 +14,18 @@ body {
     height: 100px;
     background-color: orange;
     position: absolute;
-    right: 250px;
-    top: 75px;
+    right: 125px;
+    top: 150px;
     border-radius: 50px;
 }
 
-#main-container {
+#reset-text{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+#card-container {
     max-width: 1000px;
     margin: 20px auto;
     display: flex;
@@ -27,7 +33,7 @@ body {
     justify-content: space-between;
 }
 
-.card-layout {
+.card-design {
     border: 1px solid orange;
     width: 180px;
     height: 180px;
@@ -37,7 +43,8 @@ body {
     align-items: center;
 }
 
-.card-layout img {
+.card-design img {
     width: 95%;
     height: 95%;
+    display: none;
 }
