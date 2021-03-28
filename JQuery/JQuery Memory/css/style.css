@@ -14,12 +14,28 @@ body {
     height: 100px;
     background-color: orange;
     position: absolute;
-    right: 125px;
+    right: 250px;
     top: 150px;
     border-radius: 50px;
 }
 
 #reset-text{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+#again-btn{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position: absolute;
+    right: 880px;
+    top: 150px;
+    border-radius: 50px;
+}
+
+#again-text{
     position: absolute;
     left: 30px;
     top: 30px;
