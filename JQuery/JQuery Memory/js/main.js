@@ -7,6 +7,9 @@ var container = "#card-container",
 	cardTwoSource,
 	flipCounter = 0;
 	clickCounter = 0;
+	timerContainer = "#js-timer";
+
+	//this.classList.remove("face-down");
 
 //Load after document is loaded 
 $(document).ready(function(){
@@ -20,6 +23,9 @@ $(document).ready(function(){
 			$(container).find("img").fadeOut();
 			$(container).find("img").fadeOut();
 		}, 250);
+		$('#js-timer').timer('pause');
+		$('#js-timer').timer('reset');
+		$('#js-timer').timer('pause');
 		flipCounter = 0;
 		clickCounter = 0;
 		$("#Sets-label").text(flipCounter);
@@ -27,6 +33,10 @@ $(document).ready(function(){
 	})
 
 	$(container + " div").on("click", function(){
+		$(timerContainer).timer({
+			format : "%H:%M:%S"
+		});
+		
 		if(cardOneId == undefined)
 		{
 			$(this).find("img").fadeIn(1000);
@@ -45,11 +55,6 @@ $(document).ready(function(){
 			setTimeout(function(){
 				CompareCards();
 			}, 750);
-			
-		}
-		else
-		{
-			alert("Something went wrong, try again")
 		}
 	})
 
@@ -61,7 +66,7 @@ $(document).ready(function(){
 			flipCounter++;
 			$("#Sets-label").text(flipCounter);
 			if(flipCounter == 10)
-			{
+			{	$("#js-timer").timer('pause');
 				setTimeout(function(){
 					$(container).find("div").fadeIn();
 				}, 750);
