@@ -58,6 +58,7 @@ if ($uploadOk == 0) {
 } else {
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $newfilename)) {
     echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
+    echo "<a href='home.php'>Go Home</a>";
     $query = "INSERT INTO `imagedata` (`ImageDir`, `UserID`)
     VALUES ('$newfilename', '$UserID');";
     $result = mysqli_query($conn, $query);

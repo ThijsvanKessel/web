@@ -1,4 +1,4 @@
-function updateProjects() {
+function updateShows() {
 	$.ajax({
 		type: "POST",
 		url: "includes/update_shows_db.php",
@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 	//Onclick: Update shows in DB
 	$("#js-update-shows").on("click", function(){
-		updateProjects();
+		updateShows();
 	});
 
 });
