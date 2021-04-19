@@ -12,6 +12,9 @@
     </head>
     <body>
         <?php
+            include("include/header.php");
+            HeaderThijs();
+            
             session_start();
             $servername = "localhost";
             $username = "root";
@@ -39,8 +42,6 @@
             /*sees if the forms are filled in, if not it will enter this if and give an error*/
             if ($user == "" || $pass == "")
             {
-                include("include/header.php");
-                HeaderThijs();
                 ?>
                 <div id="login-screen">
                     <a>Try</a>
@@ -54,21 +55,12 @@
             /*checks if the data you got from the database matches up with what was put into the form*/
             else if ($row['email'] == $user && $row['pass'] == $pass)
             {   ?>
-                <header id="header">
-                    <div class="content-container">
-                        <div class="navigation">
-                            <nav class="main-nav">
-                                <?php
-                                    /*Gets data of the user from the database by selecting with the email*/
-                                    $result = mysqli_query($conn,"SELECT * FROM users WHERE email = '$user'")
-                                                or die("Failed to query database ".mysqli_error());
-                                    $row = mysqli_fetch_array($result);
-                                ?>
-                                <li><a id="logout" href="login.php">Logout</a></li>
-                            </nav>
-                        </div>
-                    </div>
-                </header>
+                <?php
+                    /*Gets data of the user from the database by selecting with the email*/
+                    $result = mysqli_query($conn,"SELECT * FROM users WHERE email = '$user'")
+                                or die("Failed to query database ".mysqli_error());
+                    $row = mysqli_fetch_array($result);
+                ?>
                 <div id="home-screen">
                     <a id="title">Welcome</a><br>
                     <!--echoes the username from the user for a personal greeting-->
