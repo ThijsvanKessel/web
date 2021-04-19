@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: maxvd
- * Date: 4/11/2018
- * Time: 6:53 PM
- */
 
 extract($_POST);
 session_start();

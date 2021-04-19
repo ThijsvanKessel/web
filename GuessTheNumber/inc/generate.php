@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: max
- * Date: 4/10/2018
- * Time: 9:21 AM
- */
-
 function randomNumb()
 {
     if ($_SESSION['statusGame'] == 0) {

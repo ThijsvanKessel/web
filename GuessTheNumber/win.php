@@ -3,7 +3,7 @@
 
 <html>
 	<head>
-		<title>Jquery memory</title>
+		<title>Guess The Number</title>
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
